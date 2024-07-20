@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\style\style.css">
+    <link rel="stylesheet" href="assets\style\slick.css">
+    <link rel="stylesheet" href="assets\style\slick-theme.css">
+    <link rel="stylesheet" href="assets\style\ad.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <title>BiTry COMPANY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <style>
+        .preloader {
+            background:  radial-gradient(56.25% 100% at 100% 0%, #1B3853 0%, #1B3853 0.01%, #001426 100%);
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .race-by {
+            --uib-size: 80px;
+            --uib-speed: 1.4s;
+            --uib-color: #E2F8FF;
+            --uib-line-weight: 5px;
+
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: var(--uib-line-weight);
+            width: var(--uib-size);
+            border-radius: calc(var(--uib-line-weight) / 2);
+            overflow: hidden;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .race-by::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: var(--uib-color);
+            opacity: 0.1;
+        }
+
+        .race-by::after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            border-radius: calc(var(--uib-line-weight) / 2);
+            animation: raceBy var(--uib-speed) ease-in-out infinite;
+            transform: translateX(-100%);
+            background-color: var(--uib-color);
+        }
+
+        @keyframes raceBy {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        .foo{
+            position: absolute;
+            width: 100%;
+            height:75%;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+        .foo12{
+            position: absolute;
+            width: 100%;
+            height:130vh;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+        .foo1{
+            position: absolute;
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+        }
+        .foo11{
+            position: absolute;
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+            opacity: 0.6; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="race-by"></div>
+    </div>
+
+    <!-- <video class="bg-video" src="assets\video\bg-1.mov" autoplay muted loop></video> -->
+
+    <!-- <video class="footer-bg-video ds-none" src="assets\video\bg-footer.mov" autoplay muted loop></video> -->
+
+    <main>
+
+        <section id="hero">
+
+            <div class="container">
+
+                <div class="bg-txt-wrapper">
+                    <div class="background-text hero-bg-txt">
+                        BiTry <span class="gradient-txt">COMPANY</span>
+                    </div>
+                </div>
+                
+
+
+                <header>
+                    <div class="header-wrapper">
+                        <a href="#hero" class="header-item">
+                            <span>ГЛАВНАЯ</span>
+                            <div class="h-line"></div>
+                        </a>
+                        <a href="#about-us" class="header-item">
+                            <span>О НАС</span>
+                            <div class="h-line"></div>
+                        </a>
+                        <a href="#portfolio" class="header-item">
+                            <span>ПОРТФОЛИО</span>
+                            <div class="h-line"></div>
+                        </a>
+                        <a href="#feedback" class="header-item">
+                            <span>НАША КОМАНДА</span>
+                            <div class="h-line"></div>
+                        </a>
+                        <a href="#contact" class="header-item">
+                            <span>СВЯЗАТЬСЯ</span>
+                        </a>
+                    </div>
+                </header>
+
+                <div class="content-wrapper">
+                    <div class="sec-title-wrapper">
+                        <div class="white-bar hero-bar"></div>
+                        <span class="sec-title" id="hero-title">BiTry <span class="gradient-txt">Company</span></span>
+                    </div>
+                    <div class="h-line"></div>
+                    <span class="subtitle">Чат Бот | Веб разработка | Интеграция ИИ</span>
+                    <div class="paragraph">
+                        <div class="v-line hero-v-line"></div>
+                        <p id="hero-p">В частности, понимание сути ресурсосберегающих технологий не даёт нам иного выбора, кроме
+                            определения существующих финансовых и административных условий. С учётом сложившейся
+                            международной обстановки, консультация с широким активом требует от нас анализа системы!</p>
+                    </div>
+                </div>
+
+                <div class="social-wrapper">
+                    <a href="#er" style="margin-left: 0px">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#er" style="margin-left: 30px">
+                        <ion-icon name="paper-plane"></ion-icon>
+                    </a>
+                    <a href="#er" style="margin-left: 30px;margin-top: -1%;">
+                        <img id="email"src="icons8-новый-пост-50.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="break">
+
+
+
+            <div class="container">
+
+                <video class="foo1" muted autoplay loop src="assets\video\3205624-hd_1920_1080_25fps.mp4" autoplay muted loop></video>
+
+            </div>
+
+        </section>
+
+        <section id="about-us">
+
+            <div class="container">
+
+                <div class="bg-txt-wrapper">
+                    <div class="background-text about-bg-txt">
+                        О <span class="gradient-txt">Нас</span>
+                    </div>
+                </div>
+                
+                
+
+                <div class="sec-title-wrapper">
+                    <div class="white-bar about-bar"></div>
+                    <span class="sec-title" id="about-title">О <span class="gradient-txt">Нас</span></span>
+                </div>
+                <div class="content-wrapper">
+                    <div class="upper-about-wrapper">
+
+                        <div class="skills-wrapper">
+
+                            <p style="color:rgb(214, 209, 209)">Мы - энергичная команда опытных разработчиков, зажигающих идеями и воплощающих их в жизнь 
+                                наших клиентов. Наша миссия - не просто удовлетворить ожидания, а превзойти их, предлагая качественные,
+                                 инновационные и индивидуально адаптированные решения в области веб-разработки,
+                                  мобильных приложений и программного обеспечения.</p>
+                        </div>
+
+                        <div class="features-wrapper">
+                            <div class="features"><img id="logotip" src="photo1717450063-removebg-preview.png" alt=""></div> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="portfolio">
+
+            <div class="container">
+
+
+                <div class="bg-txt-wrapper">
+                    <div class="background-text portfolio-bg-txt">
+                       Наши<span class="gradient-txt"> Работы</span>
+                    </div>
+                </div>
+                
+
+                <div class="sec-title-wrapper">
+                    <div class="white-bar portfolio-bar"></div>
+                    <span class="sec-title" id="portfolio-title">Наши <span class="gradient-txt">Работы</span></span>
+                </div>
+                
+
+                <div class="content-wrapper slider">
+                    <div class="grid-layout">
+                        <div class="portfolio-item-wrapper">
+                            <div class="port-i-content"> <img class="ing" src="work4.jpeg" alt=""></div>
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="port-i-content"><img class="ing" src="work.jpeg" alt=""></div>
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="port-i-content"> <img class="ing2" src="logo.jpeg" alt=""></div>
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="port-i-content"><img class="ing" src="work2.jpeg" alt=""></div>
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="port-i-content"> <img class="ing2" src="avatar288240082.jpg" alt=""></div> 
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="port-i-content"><img class="ing"src="work3.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrows-wrapper">
+                    <div class="h-line"></div>
+                    <div class="arrows">
+                        <span id="prev">Previous</span>
+                        <span id="next">Next</span>
+                    </div>
+                    <div class="h-line"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="break">
+
+            <div class="container">
+                <video class="foo11" muted autoplay loop src="assets\video\1.mp4" autoplay muted loop></video>
+                
+                <span class="break-title">КАК AI ИЗМЕНИТ ИНДУСТРИЮ</span>
+                <div class="h-line"></div>
+                <p class="break-desc1">Разработка искусственного интеллекта (ИИ) переживает стремительный рост с многочисленными приложениями, трансформирующими различные отрасли. ИИ-системы используют алгоритмы машинного обучения для анализа больших объемов данных, выявления закономерностей и принятия прогнозов. Разработчики ИИ создают интеллектуальные решения, которые могут распознавать образы, переводить языки, ставить диагнозы и даже сочинять музыку. Поскольку ИИ продолжает совершенствоваться, можно ожидать еще более мощных и инновационных приложений, которые будут влиять на все аспекты нашего образа жизни.</p>
+              
+            </div>
+
+        </section>
+
+        <section id="feedback">
+
+            <div class="container">
+
+
+                <div class="bg-txt-wrapper">
+                    <div class="background-text feedback-bg-txt">
+                        Наши <span class="gradient-txt">Сотрудники</span>
+                    </div>
+                </div>
+                
+
+                <div class="sec-title-wrapper">
+                    <div class="white-bar feedback-bar"></div>
+                    <span class="sec-title" id="feedback-title">Наши<span class="gradient-txt"> Сотрудники</span></span>
+                </div>
+                
+
+                <p class="break-desc" style="font-size: 20px;">Все необходимые специальности – от сеньора до тестировщика – у нас в штате. Мы нанимаем лучших специалистов на рынке.</p>
+
+
+                <div class="content-wrapper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-content">
+                                    <span class="title" style="font-size: 17px;">Владислав Тихоненко</span>
+                                    <span class="task"></span>
+                                    <p class="desc">Технический директор, руководитель отдела Software разработок</p>
+                                    <div class="date-wrapper">
+                                        <div class="h-line"></div>
+                                        <span class="date" style="font-size: 18px;">@Vlad_Tichonenko</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-content">
+                                    <span class="title" style="font-size: 17px;">Егор Ракицкий</span>
+                                    <span class="task"></span>
+                                    <p class="desc">Коммерческий директор, руководитель отдела AI разработок</p>
+                                    <div class="date-wrapper">
+                                        <div class="h-line"></div>
+                                        <span class="date" style="font-size: 18px;">@gre_zamza</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-content">
+                                    <span class="title" style="font-size: 17px;">Андрей Ханцевич</span>
+                                    <span class="task"></span>
+                                    <p class="desc">Project manager отдела Web-разработок</p>
+                                    <div class="date-wrapper">
+                                        <div class="h-line"></div>
+                                        <span class="date" style="font-size: 18px;">@andhanc</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-content">
+                                    <span class="title" style="font-size: 17px;">Иван Суровый</span>
+                                    <span class="task"></span>
+                                    <p class="desc">Project manager отдела DevOps-разработок</p>
+                                    <div class="date-wrapper">
+                                        <div class="h-line"></div>
+                                        <span class="date" style="font-size: 18px;">@omuteqq</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-content">
+                                    <span class="title" style="font-size: 17px;">Александр Чиж</span>
+                                    <span class="task"></span>
+                                    <p class="desc">Руководитель отдела Front-End разработки</p>
+                                    <div class="date-wrapper">
+                                        <div class="h-line"></div>
+                                        <span class="date" style="font-size: 18px;">@non_vorrai</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <video class="foo12" muted autoplay loop src="assets\video\iphone.mov" autoplay muted loop></video> 
+
+            <div class="container">
+
+                <div id="er" class="contact-social">
+                    <a href="https://web.telegram.org/a/#-1001991900910_15"> 
+                       Связаться с нами
+                    </a>
+                </div>
+
+                <div class="content-wrapper">
+                    <div>
+                        <span class="title">Контакты</span>
+                        
+                        <div class="phone">
+                            <a href="https://web.telegram.org/a/#-1001991900910_15"><span>t.me: @ITtbcstudio</span></a>
+                        </div>
+                        <div class="phone">
+                         <a href="https://www.instagram.com/bitry_studio?igsh=Y3B1azJxc2JhaHA="><span>inst: @bitry_studio</span></a>   
+                        </div>
+                        <div class="email">
+                            <!-- <ion-icon name="mail"></ion-icon> -->
+                           <span>bitrydev.info@gmail.com</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="title">Почему следует с нами работать?</span>
+                        Работая с нами, вы получаете гарантию быстрой и качественной работы. Наша команда нацелена на удовлетворение потребностей каждого клиента.
+                        <div class="faq-item">
+                            <div class="left-bar">
+                                <ion-icon name="chevron-forward"></ion-icon>
+                                <div class="v-line ds-none"></div>
+                            </div>
+                            <div class="q-content">
+                                <span class="question">Быстрая работа</span>
+                                <p class="answer ds-none">Наша команда гарантирует быструю и качественную работу. Мы стремимся удовлетворить потребности каждого клиента, предлагая эффективные решения и профессиональный подход к выполнению задач.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="left-bar">
+                                <ion-icon name="chevron-forward"></ion-icon>
+                                <div class="v-line ds-none"></div>
+                            </div>
+                            <div class="q-content">
+                                <span class="question">Почему мы?</span>
+                                <p class="answer ds-none"> Большой опыт и крепкое портфолио. Готовы реализовать любую вашу идею! Нам доверяют: крупнейшая майнинговая компания в РФ- CRYPTODESK,  онлайн магазин обуви NanogiShop , Альвеста и др.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="left-bar">
+                                <ion-icon name="chevron-forward"></ion-icon>
+                                <div class="v-line ds-none"></div>
+                            </div>
+                            <div class="q-content">
+                                <span class="question">Еще какой-нибудь вопрос?</span>
+                                <p class="answer ds-none">Смело задавайте нам в нашем Инстаграме и Телераме</p>
+                            </div>
+                        </div>
+                        <div class="back-btn ds-none">
+                            <ion-icon name="chevron-back"></ion-icon>
+                            <span>Back</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer >
+            <span>2024</span>
+            <div class="v-line"></div>
+            <span style="margin-right: calc((100vw / 2) - 165px);">BiTry_COMPANY</span>
+        </footer>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"
+        integrity="sha512-BBr2rnynJqyS/8AEes8iOjQn2bN7k7Z1RcLBbG2vXgsxUFts1SGK5XY1k9Y7d//FsKowhFq6RXrFePqd2b0/3A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="assets\script\slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/script/index.js"></script>
+</body>
+
+</html>
